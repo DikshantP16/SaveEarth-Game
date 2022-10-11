@@ -7,10 +7,6 @@ var result = document.getElementById("result");
 const score = document.getElementById("score");
 var counter = 0;
 
-// sounds
-const shoot = document.getElementById("shoot");
-const gameOverSound = document.getElementById('gameover');
-
 // fighter jet movement
 window.addEventListener("keydown", function (e) {
     if (e.keyCode == "39") {
@@ -28,6 +24,10 @@ window.addEventListener("keydown", function (e) {
     }
 
 })
+
+// sounds
+const shoot = document.getElementById("shoot");
+const gameOverSound = document.getElementById('gameover');
 
 // fire bullet
 window.addEventListener("keydown", function (e) {
