@@ -14,6 +14,19 @@ body{
     align-items: center;
     min-height: 100vh;
 }
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 .game{
     width: 390px;
@@ -23,6 +36,19 @@ body{
     position: absolute;
 }
 
+.alienMove{
+    animation: alienMove 1s linear  infinite  forwards;
+}
+
+.bullet{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 370px;
+    left: 0;
+    text-align: center;
+    animation: fire 1s linear 1 forwards;
+}
 .player{
     width: 130px;
     height: auto;
@@ -50,19 +76,7 @@ body{
     height: auto;
 }
 
-.alienMove{
-    animation: alienMove 1s linear  infinite  forwards;
-}
 
-.bullet{
-    width: 100px;
-    height: auto;
-    position: absolute;
-    top: 370px;
-    left: 0;
-    text-align: center;
-    animation: fire 1s linear 1 forwards;
-}
 
 .bulletImg{
     width: 100px;
@@ -104,16 +118,4 @@ body{
     font-size: 2.2rem;
     font-weight: bold;
     color: red;
-}
-#btn{
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    border: none;
-    background-color: black;
-    color: white;
-    font-size: 25px;
-    margin-top: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
 }
