@@ -16,6 +16,9 @@ body{
 }
 
 .game{
+    width:200px;
+    overflow:hidden;
+    position:absolute;
     width: 390px;
     height: 600px;
     background-image: url('spacebg.png');
